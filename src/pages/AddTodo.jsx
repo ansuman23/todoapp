@@ -51,8 +51,8 @@ const AddTodo = () => {
                         </div>
                     </form>
                 </div>
-                {/* <Link className='viewTodos text-decoration-none text-center mx-auto' to='/'>View My Todos</Link> */}
             </div>
+            <Link className='viewTodos d-flex justify-content-center fs-5 text-primary' to='/'>View My Todos</Link>
         </div>     
     </div>
   )

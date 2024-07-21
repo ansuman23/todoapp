@@ -5,6 +5,7 @@ import 'react-calendar/dist/Calendar.css';
 import 'react-clock/dist/Clock.css';
 import { useParams } from 'react-router-dom';
 import { useTodos } from '../contexts/TodoContext';
+import { Link } from 'react-router-dom';
 
 const UpdateTodo = () => {
     const taskRef=useRef(null);
@@ -21,6 +22,16 @@ const UpdateTodo = () => {
             console.log(res)
             if(res){
                 setInfos(res);
+                const[month,day,year]=res.date.split('/');
+                const[time,period]=res.time.split(' ');
+                let[hours,minutes]=time.split(':');
+                if(period==='PM' && hours!=='12'){
+                    hours=parseInt(hours,10)+12;
+                }else if(period==='AM' && hours==='12') {
+                    hours='00';
+                }
+                const combinedDateTime=new Date(year,month-1,day,hours,minutes);
+                setDateTime(combinedDateTime);
             }
         } catch (error) {
             return {status:false};
@@ -72,6 +83,7 @@ const UpdateTodo = () => {
                     </form>
                 </div>
             </div>
+            <Link className='viewTodos d-flex justify-content-center fs-5 text-secondary' to='/'>View My Todos</Link>
         </div>     
     </div>
   )
