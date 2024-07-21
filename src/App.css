@@ -1,0 +1,28 @@
+.main-app{
+    background-color: rgb(245, 245, 128) !important;
+    height: 100% !important;
+    width: 100% !important;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif!important;
+}
+.nav-item:hover{
+    background-color: rgb(251, 247, 169);
+    border-radius: 12px;
+}
+.nav-link:hover{
+    color: black !important;
+}
+.btn-completed {
+    background-color: rgb(115, 227, 115) !important;
+    color: black !important;
+
+}
+.btn-pending{
+    background-color: rgb(204, 199, 199) !important;
+    color: black !important;
+}
+body{
+    background-color: rgb(245, 245, 128) !important;
+}
+/* .landingPage{
+
+} */
