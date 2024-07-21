@@ -11,7 +11,7 @@ A simple and efficient To-do Application for managing tasks and to-dos.
     - npm create vite@latest (Install Vite, if not installed earlier)
     - npm install (Install all dependencies required for the project)
     - npm i bootstrap (Install bootstrap for UI and styling purposes)
-    - npm i react-router-dom (Install React-Router-Dom for client-side routing)
+    - npm i react-router-dom (Install React-router-dom for client-side routing)
     - npm i react-datetime-picker (Install React-datetime-picker used in input forms)
     - npm run dev (Run the project)
 
