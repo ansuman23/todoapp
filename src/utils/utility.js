@@ -7,9 +7,3 @@ export function formatDate(dateString) {
     const suffix=dayNumber % 10 === 1 && dayNumber !== 11?'st':dayNumber % 10 === 2 && dayNumber !== 12 ? 'nd':dayNumber % 10 === 3 && dayNumber !== 13?'rd': 'th';
     return `${dayNumber}${suffix} ${monthName} ${yearNumber}`;
 }
-export function formatTime(timeString) {
-    const [time, period] = timeString.split(' ');
-    let [hours, minutes] = time.split(':').map(Number);
-    const formattedTime = `${hours}:${minutes < 10 ? '0' : ''}${minutes} ${period}`;
-    return formattedTime;
-}

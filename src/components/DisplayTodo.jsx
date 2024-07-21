@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom'
 import { useTodos } from '../contexts/TodoContext';
-import { formatDate, formatTime } from '../utils/utility';
+import { formatDate } from '../utils/utility';
 
 const DisplayTodo = ({info,handleMarkAsCompleted}) => {
   const { id, task, date, time, completed } = info;
@@ -17,7 +17,7 @@ const DisplayTodo = ({info,handleMarkAsCompleted}) => {
         </button>
         <p className="fw-bold mt-4">{task}</p>
         <p className="fw-bold">{formatDate(date)}</p>
-        <p className="fw-bold">{formatTime(time)}</p>
+        <p className="fw-bold">{time}</p>
         <div className="text-end p-1">
           <Link to={`/updateTodo/${id}`} className="btn btn-info btn-sm m-1">
             Update
