@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg bg-dark">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <h3 className="text-white">TODO-APP 📝</h3>
+          <h3 className="text-white">TODO SUITE 📝</h3>
         </Link>
         <button
           className="navbar-toggler-white d-lg-none border-white"

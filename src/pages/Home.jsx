@@ -97,7 +97,7 @@ const Home = () => {
       ) : (
         <>
           <div className="landingPage text-center">
-            <h1 className="fs-2">Welcome to TODO-APP</h1>
+            <h1 className="fs-2">Welcome to TODO SUITE</h1>
             <h3 className="fs-5 fst-italic">The key is not to prioritize what's on your schedule, but to schedule your priorities.</h3>
             <Link to="/login" className="fs-4">Login to view your todos</Link>
           </div>

@@ -8,8 +8,8 @@ export function formatDate(dateString) {
     return `${dayNumber}${suffix} ${monthName} ${yearNumber}`;
 }
 export function formatTime(timeString) {
-    let [hours,minutes]=timeString.split(':').map(Number);
-    const period=hours >= 12 ?'PM':'AM';
-    hours=hours%12||12; 
-    return `${hours}:${minutes < 10 ? '0' : ''}${minutes} ${period}`;
+    const [time, period] = timeString.split(' ');
+    let [hours, minutes] = time.split(':').map(Number);
+    const formattedTime = `${hours}:${minutes < 10 ? '0' : ''}${minutes} ${period}`;
+    return formattedTime;
 }
